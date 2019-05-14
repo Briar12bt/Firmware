@@ -345,7 +345,8 @@ void FlightTaskManualAltitude::_updateSetpoints()
 	_respectGroundSlowdown();
 }
 
-bool FlightTaskManualAltitude::_checkTakeoff() {
+bool FlightTaskManualAltitude::_checkTakeoff()
+{
 	// stick is is deflected up
 	return _sticks(2) > 0.65f;
 }
